@@ -128,12 +128,7 @@ button {
 .hero__media {
   position: relative;
   display: flex;
-  flex-shrink: 0;
-  width: 47%;
-}
-
-.hero__content {
-  width: 44%;
+  padding-bottom: 94px;
 }
 
 .hero__title {
@@ -230,7 +225,6 @@ button {
 }
 
 .media__img-container:nth-child(2) {
-  z-index: 3;
   border: 2px solid #fff;
   margin: 0 0 -58px -23px;
   width: 186px;
@@ -256,7 +250,7 @@ button {
 
 .media-desc {
   position: absolute;
-  bottom: -94px;
+  bottom: 0;
   left: 129px;
   z-index: 3;
   border-radius: 10px;
