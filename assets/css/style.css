@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000958;
+  --text-color: #656689;
+  --lighter-color: #5e6085;
+  --orange-color: #ff5b2e;
+
+  --primary-font: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --header-font: "Sora", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+}
+/* ============================ Common ============================  */
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+input,
+textarea,
+select,
+button {
+  color: inherit;
+}
