@@ -1072,3 +1072,111 @@ button {
   .pricing-item__icon {
   color: #ff5b2e66;
 }
+
+/* ============================ Pricing ============================  */
+.review {
+  margin-top: 53px;
+}
+
+.review__inner {
+  display: flex;
+  align-items: center;
+}
+
+.review__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1.5px solid#FFD1C4;
+  width: 54px;
+  height: 54px;
+  background: transparent;
+  color: var(--orange-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.review__btn:hover {
+  background: var(--orange-color);
+  color: #fff;
+  box-shadow: 0px 5px 27px 0px #ff5b2e4d;
+}
+
+.review__img-block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 44px;
+  border-radius: 137px;
+  width: 274px;
+  height: 350px;
+  background: #ffda54;
+}
+
+.review__img {
+  border-radius: 137px;
+  width: 100%;
+  height: 427px;
+  object-fit: cover;
+}
+
+.review_content {
+  margin-left: 115px;
+}
+
+.review__feedback {
+  margin-top: 24px;
+  color: #000;
+  width: 553px;
+  font-size: 1.8rem;
+  line-height: 1.56;
+}
+
+.review__btn--right {
+  margin-left: auto;
+}
+
+.review__author-row {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 34px;
+}
+
+.review__author-line {
+  background: #000;
+  border-radius: 1px;
+  width: 20px;
+  height: 2px;
+}
+
+.review__author {
+  color: #000;
+  font-family: var(--header-font);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.review__dots {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.dot.active {
+  border-radius: 4px;
+  width: 24px;
+  height: 8px;
+  background: var(--orange-color);
+}
+
+.dot {
+  border: 1px solid var(--orange-color);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
