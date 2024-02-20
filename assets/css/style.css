@@ -891,3 +891,184 @@ button {
   width: 193px;
   margin: 48px auto 0;
 }
+
+/* ============================ Pricing ============================  */
+.pricing {
+  margin-top: 130px;
+  padding: 86px 0;
+  background: #fff6ed;
+}
+
+.pricing__container {
+  width: 994px;
+}
+
+.pricing__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pricing__desc {
+  margin-top: 24px;
+  width: 709px;
+}
+
+.pricing__switch-wrap {
+  margin-top: 38px;
+}
+
+.pricing__switch-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 276px;
+  height: 56px;
+  padding: 0 40px;
+  border: 1px solid #ff5b2e99;
+  border-radius: 99px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.pricing__switch-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 131px;
+  height: 100%;
+  background: #ff5b2e;
+  border-radius: inherit;
+  transition: all 0.3s;
+}
+
+.pricing__switch-value {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+  width: 145px;
+  transform: translateX(-131px);
+}
+
+.pricing__switch-input:not(:checked)
+  + .pricing__switch-label
+  .pricing__switch-value:nth-of-type(1),
+.pricing__switch-input:checked
+  + .pricing__switch-label
+  .pricing__switch-value:nth-of-type(2) {
+  color: #ff5b2e;
+}
+
+.pricing__switch-inner {
+  position: relative;
+}
+
+.pricing__sale-off {
+  position: absolute;
+  top: -10px;
+  right: -112px;
+}
+
+.pricing__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 44px;
+  margin-top: 56px;
+}
+
+.pricing-item {
+  border-radius: 20px;
+  height: 465px;
+  background: #fff;
+  padding: 30px 28px 43px;
+}
+
+.pricing-item__name,
+.pricing-item__group,
+.pricing-item__price {
+  display: block;
+}
+
+.pricing-item__name {
+  color: var(--orange-color);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.pricing-item__group {
+  margin-top: 8px;
+  color: #3f4065;
+  font-family: var(--header-font);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.pricing-item__price {
+  margin-top: 24px;
+  color: var(--primary-color);
+  font-family: Sora;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pricing-item__btn {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  margin-top: 22px;
+}
+
+.pricing-item__perk-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.pricing-item__perk-wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.pricing-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  color: var(--orange-color);
+}
+
+.pricing-item__perk {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.pricing-item:first-child
+  .pricing-item__perk-list
+  .pricing-item__perk-wrap:nth-child(n + 4)
+  .pricing-item__icon {
+  color: #ff5b2e66;
+}
+
+.pricing-item:nth-child(2)
+  .pricing-item__perk-list
+  .pricing-item__perk-wrap:nth-child(n + 6)
+  .pricing-item__icon {
+  color: #ff5b2e66;
+}
