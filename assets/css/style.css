@@ -1081,6 +1081,7 @@ button {
 .review__inner {
   display: flex;
   align-items: center;
+  padding-top: 98px;
 }
 
 .review__btn {
